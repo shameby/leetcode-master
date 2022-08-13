@@ -6,7 +6,8 @@
 #include <vector>
 using namespace std;
 
-void printVec(vector<int>& list) {
+template <class T>
+void printVec(vector<T>& list) {
     for (int idx = 0; idx < list.size(); idx++) {
         cout << list[idx];
         if (idx != list.size() -1) {
@@ -29,7 +30,8 @@ void printDoubleVec(vector<vector<int>>& list) {
     cout << endl;
 }
 
-void printInt(int a) {
+template <class T>
+void printInt(T a) {
     cout << a << endl;
 }
 
