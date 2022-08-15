@@ -4,24 +4,25 @@
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-template <class T>
-void printVec(vector<T>& list) {
+template<class T>
+void printVec(vector<T> &list) {
     for (int idx = 0; idx < list.size(); idx++) {
         cout << list[idx];
-        if (idx != list.size() -1) {
+        if (idx != list.size() - 1) {
             cout << ",";
         }
     }
     cout << endl;
 }
 
-void printDoubleVec(vector<vector<int>>& list) {
+void printDoubleVec(vector<vector<int>> &list) {
     for (int idx = 0; idx < list.size(); idx++) {
-        for (int j =0 ; j < list[idx].size(); j++) {
+        for (int j = 0; j < list[idx].size(); j++) {
             cout << list[idx][j];
-            if (j != list[idx].size() -1) {
+            if (j != list[idx].size() - 1) {
                 cout << ",";
             }
         }
@@ -30,7 +31,7 @@ void printDoubleVec(vector<vector<int>>& list) {
     cout << endl;
 }
 
-template <class T>
+template<class T>
 void printInt(T a) {
     cout << a << endl;
 }
@@ -46,16 +47,16 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-void printList(ListNode* head) {
+void printList(ListNode *head) {
     auto curr = head;
-    while(curr->next != nullptr) {
+    while (curr->next != nullptr) {
         cout << curr->val << ",";
         curr = curr->next;
     }
     cout << curr->val << endl;
 }
 
-ListNode* vecToList(const vector<int>& vec) {
+ListNode *vecToList(const vector<int> &vec) {
     auto hair = new ListNode();
     auto curr = hair;
     for (int i : vec) {
@@ -65,3 +66,33 @@ ListNode* vecToList(const vector<int>& vec) {
     }
     return hair->next;
 }
+
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+class Node {
+public:
+    int val;
+    vector<Node*> children;
+
+    Node() {}
+
+    Node(int _val) {
+        val = _val;
+    }
+
+    Node(int _val, vector<Node*> _children) {
+        val = _val;
+        children = _children;
+    }
+};

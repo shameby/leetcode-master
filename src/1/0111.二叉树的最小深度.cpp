@@ -1,10 +1,6 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <queue>
-#include "utils.cpp"
-using namespace std;
+// Created by randy on 2022/8/15.
+//
 
 class Solution {
 public:
@@ -27,8 +23,3 @@ public:
         return depth;
     }
 };
-
-int main() {
-
-}
-
