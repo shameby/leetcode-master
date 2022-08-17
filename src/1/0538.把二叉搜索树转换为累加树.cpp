@@ -1,12 +1,6 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <stack>
-#include <string>
-#include "utils.cpp"
-
-using namespace std;
+// Created by randy on 2022/8/17.
+//
 
 class Solution {
 public:
@@ -24,14 +18,3 @@ public:
         }
     }
 };
-
-int main() {
-    /*auto n1 = new TreeNode(2);
-    auto n2 = new TreeNode(1);
-    auto n3 = new TreeNode(3);
-    n1->left = n2;
-    n1->right = n3;
-    Solution slt;
-    slt.trimBST(n1, 1, 2);*/
-}
-
