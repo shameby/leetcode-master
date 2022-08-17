@@ -1,12 +1,6 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <queue>
-#include <string>
-#include "utils.cpp"
-
-using namespace std;
+// Created by randy on 2022/8/17.
+//
 
 class Solution {
 public:
@@ -38,4 +32,3 @@ int main() {
     Solution slt;
     slt.buildTree(inorder, postorder);
 }
-
