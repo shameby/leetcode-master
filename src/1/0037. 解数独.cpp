@@ -1,15 +1,6 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <stack>
-#include <string>
-#include <unordered_map>
-#include <algorithm>
-#include <map>
-#include "utils.cpp"
-
-using namespace std;
+// Created by randy on 2022/8/18.
+//
 
 class Solution {
 private:
@@ -80,4 +71,3 @@ int main() {
     slt.solveSudoku(board);
     printDoubleVec(board);
 }
-
