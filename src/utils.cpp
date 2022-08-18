@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -18,7 +19,8 @@ void printVec(vector<T> &list) {
     cout << endl;
 }
 
-void printDoubleVec(vector<vector<int>> &list) {
+template <class T>
+void printDoubleVec(vector<vector<T>> &list) {
     for (int idx = 0; idx < list.size(); idx++) {
         for (int j = 0; j < list[idx].size(); j++) {
             cout << list[idx][j];
