@@ -1,21 +1,14 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <stack>
-#include <string>
-#include <list>
-#include <unordered_map>
-#include <algorithm>
-#include <map>
-#include "utils.cpp"
-
-using namespace std;
+// Created by randy on 2022/8/22.
+//
 
 class Solution {
 private:
     int res;
 private:
+    // 0 没有监控覆盖
+    // 1 有监控
+    // 2 有监控覆盖
     int traversal(TreeNode* node) {
         if (node == nullptr) return 2;
         int left = traversal(node->left);
@@ -35,11 +28,3 @@ public:
         return res;
     }
 };
-
-int main() {
-   /* vector<int> fee = {1,3,2,8,4,9};
-    Solution slt;
-    auto res = slt.maxProfit(fee, 2);
-    printInt(res);*/
-}
-

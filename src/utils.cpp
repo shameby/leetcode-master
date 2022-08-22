@@ -33,6 +33,14 @@ void printDoubleVec(vector<vector<T>> &list) {
     cout << endl;
 }
 
+template <class T>
+void printDoublePair(vector<pair<T, T>> &list) {
+    for (int idx = 0; idx < list.size(); idx++) {
+        cout << list[idx].first << "," << list[idx].second << endl;
+    }
+    cout << endl;
+}
+
 template<class T>
 void printInt(T a) {
     cout << a << endl;
