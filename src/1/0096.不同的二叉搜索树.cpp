@@ -1,16 +1,6 @@
 //
-// Created by randy on 2022/8/11.
-
-#include <vector>
-#include <stack>
-#include <string>
-#include <list>
-#include <unordered_map>
-#include <algorithm>
-#include <map>
-#include "utils.cpp"
-
-using namespace std;
+// Created by randy on 2022/8/22.
+//
 
 class Solution {
 public:
@@ -38,4 +28,3 @@ int main() {
     auto res = slt.numTrees(3);
     printInt(res);
 }
-
